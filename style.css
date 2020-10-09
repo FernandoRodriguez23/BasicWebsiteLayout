@@ -1,0 +1,118 @@
+/*Basic Website layout*/
+html, body {
+    /*Resets style*/
+    margin: 0;
+    padding: 0;
+}
+html {
+    /*Common font and bg color*/
+    font-size: 10px;
+    background-color: lightgray;
+}
+body {
+    /*Center the body inside the html*/
+    width: 75%;
+    margin: 0 auto;
+}
+/*Typeography*/
+h1, h2, h3, h4, h5, h6 {
+    /*Defult header styles*/
+    font-family: 'Sonsie One', cursive;
+    color: #292929;
+}
+p, input, li {
+    /*Defult text style*/
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: maroon;
+    text-shadow: 2px 2px 10px;
+    /* First one is size, position, blur*/
+}
+h3 {
+    text-align: center;
+    text-align: 2.5rem;
+}
+h4 {
+    font-size: 1.8rem;
+}
+p, li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+/*Header layout*/
+nav, article, aside, footer {
+    background-color:white;
+    padding: 1%;
+
+}
+nav {
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    flex: 2;
+    display: flex;
+}
+nav li {
+    /*Ceter the list items*/
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+nav form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+
+}
+input {
+    font-size: 1.6em;
+    height: 36px;
+
+}
+input[type="search"] {
+    flex: 3;
+}
+input[type="sumbit"] {
+    flex: 3;
+    margin-left: 1rem;
+    background: #333333;
+    border: 0;
+    color: whitesmoke;
+}
+/*Main Layout*/
+main {
+    display: flex;
+
+}
+article {
+    flex: 4;
+}
+aside {
+    flex: 1;
+    margin-left: 1;
+    background-color: whitesmoke;
+}
+aside li {
+    padding-bottom: 10px;
+}
+footer {
+    margin-top: 10px;
+}
